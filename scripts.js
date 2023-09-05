@@ -64,7 +64,7 @@ function calcularDiferenciaFecha(anyo, mes, dia) {
     }
     mostrarResultados(anyos,"Anyos")
     mostrarResultados(meses,"Meses")
-    mostrarResultados(dias,"Dias")
+    mostrarResultados(diasRestantes,"Dias")
   console.log({
     anyos: anyos,
     meses: meses,
