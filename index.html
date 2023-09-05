@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: 'Poppins ExtraBold'; /* El nombre que deseas darle a tu fuente */
+      src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') ; /* Ruta a tu fuente y formato */
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: ('OFL');
+    }
+    #exterior{
+      background-color: #F0F0F0;
+      width: 90vw;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    body{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      flex-wrap: nowrap;
+    }
+    .attribution{
+      width: 100vw;
+    }
+    #container{
+      padding: 1.5rem;
+      background-color: white;
+      width: max-content;
+      margin: 0 auto;
+      border-radius: 2rem;
+      border-bottom-right-radius: 7rem;
+      
+    }
+    #entrada{
+      display: flex;
+      flex-direction: row;
+      align-items: self-start;
+    }
+    #botonera{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 35vw;
+    }
+    #linea{
+      height: 1px;
+      width: 80%;
+      border: 1px solid #F7F7F7;
+    }
+    input{
+      border:2px solid #F7F7F7;
+      padding: 0.3rem;
+      width: 6rem;
+    }
+    button{
+      border-radius: 100%;
+      background-color: #854EF9;
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    #entrada>div{
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+    }
+    #resultados{
+      font-size: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="exterior">
+    <div id="container">
+      <div id="entrada">
+        <div>
+          <label>DAY</label>
+          <input id="day"/>
+
+        </div>
+        <div>
+          <label>MONTH</label>
+          <input id="month"/>
+        </div>
+        <div>
+          <label>YEAR</label>
+          <input id="year"/>
+        </div>
+      </div>
+      <div id="botonera">
+        <div id="linea"></div>
+        <button >
+          <img src="assets/images/icon-arrow.svg" alt="" srcset="">
+        </button>
+      </div>
+      <div id="resultados">
+        <div>
+          <span id="diferenciaAnyos"></span>years
+        </div>
+        <div id="diferenciaMeses">
+          months
+        </div>
+        <div id="diferenciaDias">
+          days
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+</body>
+</html>
